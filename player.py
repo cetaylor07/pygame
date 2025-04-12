@@ -16,7 +16,7 @@ class Player(CircleShape):
         return [a, b, c]
     
     def draw(self, screen):
-        pygame.draw.polygon(screen, color, points, line_width)
         color = "white"
         points = self.triangle()
         line_width = 2
+        pygame.draw.polygon(screen, color, points, line_width)
